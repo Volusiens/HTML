@@ -1,0 +1,153 @@
+/* reset */
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+body{
+	background: url(../images/bg3.jpg) no-repeat #E7E7E7;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	font-family: 'bebasregular';
+}
+body:after {
+	background: rgba(134,6,71,0.7);
+}
+.container1{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: transparent url(../images/pattern.png) repeat top left;
+	z-index: 2;
+}
+/*end reset*/
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../font/BEBAS___-webfont.eot');
+    src: url('../font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/BEBAS___-webfont.woff') format('woff'),
+         url('../font/BEBAS___-webfont.ttf') format('truetype'),
+         url('../font/BEBAS___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+//*---start-notify-form----*/
+.notify{
+	text-align: center;
+	background: rgba(0, 0, 0, 0.36);
+	width: 50%;
+	margin: 2em auto 0 auto;
+	padding: 0.5em 2em 2em 2em;
+	font-family: 'bebasregular';
+}
+.notify h3{
+	font-size: 1em;
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 1em 0;
+	word-spacing: 2px;
+}
+.notify input[type="text"]{
+	margin: 5px,5px;
+	width:80%;
+	padding:12px;
+	border:none;
+	outline:none;
+	font-family: '黑体';
+}
+.notify input[type="button"]{
+	border: 1px solid #000000; /* Fallback */
+    border: 1px solid rgba(0,0,0,0.4);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.3),
+        inset 0 10px 10px rgba(255,255,255,0.1);
+    border-radius: 3px;
+    background: #38a6f0;
+
+	padding:12px;
+	border:none;
+	outline:none;
+	font-family: 'bebasregular';
+
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	color:#FFF;
+	cursor:pointer;
+}
+.notify {
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.31);
+	padding: 2em;
+	margin-top: 2em;
+}
+.notify input[type="button"]:hover{
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+.notify input[type="button"]:active{
+	background: #287db5;
+    box-shadow: inset 0 0 3px rgba(0,0,0,0.6);
+    border-color: #000; /* Fallback */
+    border-color: rgba(0,0,0,0.9);
+}
+
+/*----start-copy-right-----*/
+.company{
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+}
+.copy-right{
+	text-align: center;
+}
+.copy-right p{
+	color: #fff;
+	font-size: 1em;
+	font-weight: inherit;
+	word-spacing: 0.2em;
+}
+.copy-right p a{
+	color: #fff;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.copy-right p a:hover{
+	color:#000;
+}
+/*-----start-responsive-design------*/
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+	.notify {
+		width: 58%;
+	}
+}
+@media only screen and (max-width: 768px) and (min-width: 640px) {
+	.notify {
+		width: 77%;
+	}
+}
