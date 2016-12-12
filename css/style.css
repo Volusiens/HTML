@@ -202,3 +202,39 @@ li a{
 li a:hover, .dropdown:hover .dropbtn{   
     background-color:#111;   
 }   
+
+.article{
+	position: fixed;
+	width: 60%;
+	left: 20%;
+	top: 35%;
+	background-color:white;
+}
+.article a{
+	color:black;
+	font-family: 黑体; 
+	font-size: 40px;
+	text-align: center;
+}
+.article p{
+	color:black;
+	font-family: 宋体; 
+	font-size: 20px;
+}
+
+.key {
+   border-top: 1px solid #96d1f8;
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 5px 10px;
+   border-radius: 8px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   position: fixed;
+   	left: 5%;
+	top: 35%;
+   }
